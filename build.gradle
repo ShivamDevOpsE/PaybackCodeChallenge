@@ -13,6 +13,10 @@ repositories {
     jcenter()
 }
 
+test {
+    useJUnitPlatform()
+}
+
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -27,6 +31,22 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.appium/java-client
     implementation group: 'io.appium', name: 'java-client', version: '8.1.1'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.141.59'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '4.4.0'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.4.0'
+
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+
+
+
+
 
 
 

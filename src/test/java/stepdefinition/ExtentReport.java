@@ -20,15 +20,15 @@ public class ExtentReport {
         property.load(fis);
 
         ExtentSparkReporter reporter = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/DynamicExtentReport.html");
-        reporter.config().setDocumentTitle("Angular_SmokeTestReport");
-        reporter.config().setReportName("SmokeTests");
+        reporter.config().setDocumentTitle("Payback App Automation Test Report");
+        reporter.config().setReportName("Payback Apply Coupon Test Report");
 
         extent = new ExtentReports();
         extent.attachReporter(reporter);
 
-        extent.setSystemInfo("Project Name", "Live Contract - Angular Version");
+        extent.setSystemInfo("Project Name", "Payback App");
         extent.setSystemInfo("Tester", "Shivam Goyal");
-        extent.setSystemInfo("Stage", "RC");
+        extent.setSystemInfo("Stage", "Android App");
     }
 
     public void tearDown() {

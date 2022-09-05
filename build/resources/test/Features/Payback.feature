@@ -1,7 +1,7 @@
 #Author: goyal.shivam002
 
 @paybackTest
-Feature: Login in Payback app and then apply REWE coupon.
+Feature: Login in Payback app and then apply first REWE coupon.
 
   Scenario Outline: Coupon activation for a logged in user.
     Given Open the PAYBACK app
