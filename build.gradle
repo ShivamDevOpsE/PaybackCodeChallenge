@@ -1,0 +1,47 @@
+/*plugins {
+    id 'java'
+}*/
+
+apply plugin: 'java'
+
+group 'org.payback.challenge'
+version '1.0-SNAPSHOT'
+
+repositories {
+    //jcenter is for resolving dependencies
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
+
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    implementation group: 'io.appium', name: 'java-client', version: '8.1.1'
+
+
+
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:31.1-jre'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'io.cucumber:cucumber-java:7.6.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.6.0'
+    testImplementation 'io.rest-assured:rest-assured:5.1.1'
+}
+
+
+test {
+    useJUnitPlatform()
+}
