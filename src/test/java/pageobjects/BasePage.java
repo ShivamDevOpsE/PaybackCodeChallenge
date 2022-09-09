@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public BasePage(WebDriver driver){
         this.driver = driver;

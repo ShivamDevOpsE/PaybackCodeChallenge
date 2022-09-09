@@ -10,7 +10,7 @@ public class FilterPage extends BasePage {
     }
 
     //*** 'Rewe' Partner in the list
-    @FindBy(xpath = "//*[@id='de.payback.client.android:id/image']")
+    @FindBy(xpath = "(//*[@id='de.payback.client.android:id/image'])[3]")
     public WebElement rewePartner;
 
     public WebElement getRewePartner() { return rewePartner; }

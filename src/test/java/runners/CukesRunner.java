@@ -7,10 +7,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                "pretty", "html:target/cucumber"
+                "json:target/cucumber.json",
+                "html:target/default-html-reports",
+                "rerun:target/rerun.txt"
         },
         features = {"src//test//resources//Features"},
-        glue = {"stepdefinition", "utilities"},
+        glue = {"stepdefinition"},
         dryRun = false,
         tags = "@paybackTest"
 )

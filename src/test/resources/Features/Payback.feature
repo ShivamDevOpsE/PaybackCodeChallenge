@@ -3,7 +3,7 @@
 @paybackTest
 Feature: Login in Payback app and then apply first REWE coupon.
 
-  Scenario Outline: Coupon activation for a logged in user.
+    Scenario: Coupon activation for a logged in user.
     Given Open the PAYBACK app
     And User login with valid credentials
     #Given User should be able to login using valid credentials
@@ -13,4 +13,4 @@ Feature: Login in Payback app and then apply first REWE coupon.
     Then Selected Coupon for Rewe should be activated
     And Rewe coupon will be displayed in Active section
 
-    Examples:
+
